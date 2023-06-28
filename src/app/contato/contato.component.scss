@@ -1,0 +1,18 @@
+.contato-list {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .contato-list li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .contato-list i {
+	margin-right: 10px;
+  }
+  
+  .contato-list span {
+	font-weight: bold;
+  }
