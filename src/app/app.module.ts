@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { WhiteBackgroundComponent } from './white-background/white-background.component';
-import { ColumnComponent } from './column/column.component';
-import { FotoPerfilComponent } from './foto-perfil/foto-perfil.component';
-import { ContatoComponent } from './contato/contato.component';
-import { CompetenciasComponent } from './competencias/competencias.component';
-import { LinguagensComponent } from './linguagens/linguagens.component';
+import { WhiteBackgroundComponent } from './left-column/white-background/white-background.component';
+import { ColumnComponent } from './left-column/column/column.component';
+import { FotoPerfilComponent } from './left-column//foto-perfil/foto-perfil.component';
+import { ContatoComponent } from './left-column//contato/contato.component';
+import { CompetenciasComponent } from './left-column//competencias/competencias.component';
+import { LinguagensComponent } from './left-column//linguagens/linguagens.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
