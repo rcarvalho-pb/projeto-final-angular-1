@@ -1,0 +1,19 @@
+.foto-perfil img {
+	position: relative;
+	width: 100%;
+  }
+  .foto-perfil {
+	position: relative;
+  
+	.texto-sobreposto {
+	  position: absolute;
+	  top: 89%;
+	  left: 30%;
+	  transform: translate(-50%, -50%);
+	  color: white;;
+	  font-size: 32px;
+	  font-weight: bold;
+	  /* Adicione outros estilos de texto conforme necessário */
+	}
+  }
+  

@@ -1,0 +1,37 @@
+.linguagens {
+	.linguagem-item {
+	  margin-bottom: 10px;
+  
+	  .linguagem-label {
+		display: inline-block;
+		width: 150px;
+		font-weight: bold;
+	  }
+  
+	  .progress-bar {
+		background-color: #d3d3d3;
+		height: 20px;
+		width: 200px;
+		overflow: hidden;
+		border-radius: 10px;
+		
+		.progress {
+		  height: 100%;
+		  background-color: rgb(192, 103, 125);
+		  border-radius: 10px;
+		  position: relative;
+  
+		  .progress-label {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+		  }
+		}
+	  }
+	}
+  }
+  
