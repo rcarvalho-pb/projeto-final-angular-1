@@ -12,6 +12,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { WorkExperienceComponent } from './upper-right/work-experience/work-experience.component';
+import { EducationComponent } from './bottom-right/education/education.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {MatIconModule} from '@angular/material/icon';
     ContatoComponent,
     CompetenciasComponent,
     LinguagensComponent,
-    IndexComponent
+    IndexComponent,
+    WorkExperienceComponent,
+    EducationComponent
   ],
   imports: [
     MatCardModule,
