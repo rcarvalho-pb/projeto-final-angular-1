@@ -12,6 +12,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { BoxHorizontalComponent } from './box-horizontal-top/box-horizontal-top.component';
+import { BoxHorizontalBottomComponent } from './box-horizontal-bottom/box-horizontal-bottom.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {MatIconModule} from '@angular/material/icon';
     ContatoComponent,
     CompetenciasComponent,
     LinguagensComponent,
-    IndexComponent
+    IndexComponent,
+    BoxHorizontalComponent,
+    BoxHorizontalBottomComponent,
   ],
   imports: [
     MatCardModule,

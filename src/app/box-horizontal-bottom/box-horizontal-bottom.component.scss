@@ -1,0 +1,14 @@
+.box-horizontal-bottom {
+  width: 50%;
+  height: 40%;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adicione o sombreamento */
+  border-radius: 10px; /* Adicione a borda arredondada */
+  position: fixed;
+  right: 10%; /* Adicione uma margem direita */
+  top: 75%; /* Adicione uma margem superior */
+  transform: translate(0, -50%); /* Ajuste a posição vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
