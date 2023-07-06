@@ -14,6 +14,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { WorkExperienceComponent } from './upper-right/work-experience/work-experience.component';
 import { EducationComponent } from './bottom-right/education/education.component';
+import { FormularioContatoComponent } from './formulario-contato/formulario-contato.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EducationComponent } from './bottom-right/education/education.component
     LinguagensComponent,
     IndexComponent,
     WorkExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    FormularioContatoComponent
   ],
   imports: [
     MatCardModule,
