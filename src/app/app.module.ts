@@ -10,11 +10,17 @@ import { CompetenciasComponent } from './left-column/competencias/competencias.c
 import { LinguagensComponent } from './left-column/linguagens/linguagens.component';
 import { IndexComponent } from './pages/index/index.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { WorkExperienceComponent } from './upper-right/work-experience/work-experience.component';
 import { EducationComponent } from './bottom-right/education/education.component';
 import { FormularioContatoComponent } from './formulario-contato/formulario-contato.component';
+import {MatButtonModule} from '@angular/material/button';
+import { EmailPipePipe } from './pipes/email-pipe.pipe';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -28,12 +34,20 @@ import { FormularioContatoComponent } from './formulario-contato/formulario-cont
     IndexComponent,
     WorkExperienceComponent,
     EducationComponent,
-    FormularioContatoComponent
+    FormularioContatoComponent,
+    EmailPipePipe
   ],
   imports: [
+    BrowserModule,
     MatCardModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
