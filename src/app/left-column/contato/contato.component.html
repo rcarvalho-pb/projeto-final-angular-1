@@ -2,20 +2,20 @@
 	<li>
 		<mat-icon aria-hidden="false" aria-label="Example home icon"
 			fontIcon="developer_mode"></mat-icon>
-		<span>Developer</span>
+		<span>{{ contactData.job }}</span>
 	</li>
 	<li>
 		<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-		<span>Rio Grande do Sul, Brasil</span>
+		<span>{{ contactData.address }}</span>
 	</li>
 	<li>
 		<mat-icon aria-hidden="false" aria-label="Example home icon"
 			fontIcon="alternate_email"></mat-icon>
-		<span>outlook@ibest.com</span>
+		<span>{{ contactData.email }}</span>
 	</li>
 	<li>
 		<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="call"></mat-icon>
-		<span>Telefone: + 55 (99) 9999-9999</span>
+		<span>{{ contactData.cellphone }}</span>
 	</li>
 	<app-formulario-contato></app-formulario-contato>
 </ul>

@@ -1,9 +1,9 @@
 <div class="column">
 	<app-foto-perfil></app-foto-perfil>
 	<hr>
-	<app-contato></app-contato>
+	<app-contato [contactData]="data.contact"></app-contato>
 	<hr>
-	<app-competencias></app-competencias>
+	<app-competencias [competenciesData]="data.skills"></app-competencias>
 	<hr>
-	<app-linguagens></app-linguagens>
+	<app-linguagens [languagesData]="data.languages"></app-linguagens>
 </div>

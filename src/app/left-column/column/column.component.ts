@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AppData } from 'src/app/models/app-data.model';
 
 @Component({
   selector: 'app-column',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./column.component.scss']
 })
 export class ColumnComponent {
-
+  @Input() data!: AppData;
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { LanguagesData } from 'src/app/models/languages-data.model';
 
 @Component({
   selector: 'app-linguagens',
@@ -6,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./linguagens.component.scss']
 })
 export class LinguagensComponent {
-  porcentagemPortugues: number = 75;
-  porcentagemIngles: number = 60;
-  porcentagemEspanhol: number = 90;
+  @Input() public languagesData!: LanguagesData[];
 }

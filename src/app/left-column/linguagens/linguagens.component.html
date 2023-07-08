@@ -1,25 +1,25 @@
 <div class="linguagens">
 	<div class="linguagem-item">
-		<span class="linguagem-label">Português</span>
+		<span class="linguagem-label">{{ languagesData[0].name }}</span>
 		<div class="progress-bar">
-			<div class="progress" [style.width.%]="porcentagemPortugues">
-				<span class="progress-label">{{ porcentagemPortugues }}%</span>
+			<div class="progress" [style.width.%]="languagesData[0].percentage">
+				<span class="progress-label">{{ languagesData[0].percentage }}%</span>
 			</div>
 		</div>
 	</div>
 	<div class="linguagem-item">
-		<span class="linguagem-label">Inglês</span>
+		<span class="linguagem-label">{{ languagesData[1].name }}</span>
 		<div class="progress-bar">
-			<div class="progress" [style.width.%]="porcentagemIngles">
-				<span class="progress-label">{{ porcentagemIngles }}%</span>
+			<div class="progress" [style.width.%]="languagesData[1].percentage">
+				<span class="progress-label">{{ languagesData[1].percentage }}%</span>
 			</div>
 		</div>
 	</div>
 	<div class="linguagem-item">
-		<span class="linguagem-label">Espanhol</span>
+		<span class="linguagem-label">{{ languagesData[2].name }}</span>
 		<div class="progress-bar">
-			<div class="progress" [style.width.%]="porcentagemEspanhol">
-				<span class="progress-label">{{ porcentagemEspanhol }}%</span>
+			<div class="progress" [style.width.%]="languagesData[2].percentage">
+				<span class="progress-label">{{ languagesData[2].percentage }}%</span>
 			</div>
 		</div>
 	</div>

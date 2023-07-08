@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppData } from './models/app-data.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projeto-final-angular-1';
 
-  public data = {
+  public data: AppData = {
     contact: {
       job: "Developer",
       address: "Ria Grande do Sul, Brasil",

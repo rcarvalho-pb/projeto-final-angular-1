@@ -10,5 +10,5 @@ import { Contact } from 'src/app/models/contact.model';
   styleUrls: ['./contato.component.scss']
 })
 export class ContatoComponent {
-  @Input() public contato!: ContactData;
+  @Input() public contactData!: ContactData;
 }
