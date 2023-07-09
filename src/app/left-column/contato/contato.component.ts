@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { FormularioContatoComponent } from 'src/app/formulario-contato/formulario-contato.component';
 import { ContactData } from 'src/app/models/contact-data.model';
@@ -11,4 +11,5 @@ import { Contact } from 'src/app/models/contact.model';
 })
 export class ContatoComponent {
   @Input() public contactData!: ContactData;
+
 }

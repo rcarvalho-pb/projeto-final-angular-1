@@ -1,25 +1,9 @@
 <div class="linguagens">
-	<div class="linguagem-item">
-		<span class="linguagem-label">{{ languagesData[0].name }}</span>
+	<div class="linguagem-item" *ngFor="let language of languagesData">
+		<span class="linguagem-label">{{ language.name }}</span>
 		<div class="progress-bar">
-			<div class="progress" [style.width.%]="languagesData[0].percentage">
-				<span class="progress-label">{{ languagesData[0].percentage }}%</span>
-			</div>
-		</div>
-	</div>
-	<div class="linguagem-item">
-		<span class="linguagem-label">{{ languagesData[1].name }}</span>
-		<div class="progress-bar">
-			<div class="progress" [style.width.%]="languagesData[1].percentage">
-				<span class="progress-label">{{ languagesData[1].percentage }}%</span>
-			</div>
-		</div>
-	</div>
-	<div class="linguagem-item">
-		<span class="linguagem-label">{{ languagesData[2].name }}</span>
-		<div class="progress-bar">
-			<div class="progress" [style.width.%]="languagesData[2].percentage">
-				<span class="progress-label">{{ languagesData[2].percentage }}%</span>
+			<div class="progress" [style.width.%]=" language.percentage">
+				<span class="progress-label">{{ language.percentage }}%</span>
 			</div>
 		</div>
 	</div>

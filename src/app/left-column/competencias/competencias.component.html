@@ -1,33 +1,9 @@
 <div class="competencias">
-	<div class="competencia-item">
-		<span class="competencia-label">{{ competenciesData[0].name }}</span>
+	<div class="competencia-item" *ngFor="let competencie of competenciesData">
+		<span class="competencia-label">{{ competencie.name }}</span>
 		<div class="progress-bar">
-			<div class="progress" [style.width.%]="competenciesData[0].percentage">
-				<span class="progress-label">{{ competenciesData[0].percentage }}%</span>
-			</div>
-		</div>
-	</div>
-	<div class="competencia-item">
-		<span class="competencia-label">{{ competenciesData[1].name }}</span>
-		<div class="progress-bar">
-			<div class="progress" [style.width.%]="competenciesData[1].percentage">
-				<span class="progress-label">{{ competenciesData[1].percentage }}%</span>
-			</div>
-		</div>
-	</div>
-	<div class="competencia-item">
-		<span class="competencia-label">{{ competenciesData[2].name }}</span>
-		<div class="progress-bar">
-			<div class="progress" [style.width.%]="competenciesData[2].percentage">
-				<span class="progress-label">{{ competenciesData[2].percentage }}%</span>
-			</div>
-		</div>
-	</div>
-	<div class="competencia-item">
-		<span class="competencia-label">{{ competenciesData[3].name }}</span>
-		<div class="progress-bar">
-			<div class="progress" [style.width.%]="competenciesData[3].percentage">
-				<span class="progress-label">{{ competenciesData[3].percentage }}%</span>
+			<div class="progress" [style.width.%]="competencie.percentage">
+				<span class="progress-label">{{ competencie.percentage }}%</span>
 			</div>
 		</div>
 	</div>

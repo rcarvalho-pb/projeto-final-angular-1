@@ -14,7 +14,7 @@ export class AppComponent {
       job: "Developer",
       address: "Ria Grande do Sul, Brasil",
       email: "outlook@ibest.com",
-      cellphone: "+55 (83) 9 9999-9999"
+      cellphone: 83999999999
     },
     skills: [
       {
