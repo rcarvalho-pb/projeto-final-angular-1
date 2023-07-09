@@ -6,10 +6,6 @@ import { CompetenciesData } from 'src/app/models/competencies-data.model';
   templateUrl: './competencias.component.html',
   styleUrls: ['./competencias.component.scss']
 })
-export class CompetenciasComponent implements OnInit{
+export class CompetenciasComponent {
   @Input() competenciesData!: CompetenciesData[];
-  
-  ngOnInit(): void {
-    console.log(this.competenciesData);
-  }
 }

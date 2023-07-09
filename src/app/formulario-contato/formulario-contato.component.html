@@ -1,42 +1,42 @@
-<button class="btn btn-primary" (click)="showForm = true">Me mande um e-mail!</button>
 
-<div class="overlay" *ngIf="showForm" (click)="closeForm()">
-	<mat-card>
-		<div class="form-container" (click)="stopPropagation($event)">
-			<h2>Formulário de Contato</h2>
-			<form [formGroup]="contactForm">
-				<div class="form-group">
-					<label for="name">Nome:</label>
-					<input type="text" class="form-control" id="name" formControlName="name">
-					<!-- <div
-						*ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
-						<div *ngIf="contactForm.controls.name.errors.required" class="text-danger">Campo
-							obrigatório</div>
-					</div> -->
-				</div> 
-				<div class="form-group">
-					<label for="email">Email:</label>
-					<input type="email" class="form-control" id="email" formControlName="email">
-					<!-- <div
-						*ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)">
-						<div *ngIf="contactForm.controls?.email.errors.required" class="text-danger">Campo
-							obrigatório</div>
-						<div *ngIf="contactForm.controls.email.errors.email" class="text-danger">Email
-							inválido</div>
-					</div>-->
-				</div> 
-				<div class="form-group">
-					<label for="message">Mensagem:</label>
-					<textarea class="form-control" id="message" formControlName="message" maxlength="500"></textarea>
-					<!-- <div
-						*ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)">
-						<div *ngIf="contactForm.controls.message.errors.required"
-							class="text-danger">Campo obrigatório</div>
-					</div> -->
-				</div> 
+<mat-card>
+	<div class="form-container" (click)="stopPropagation($event)">
+		<h2>Formulário de Contato</h2>
+		<form [formGroup]="contactForm">
+			<div class="form-group">
+				<label for="name">Nome:</label>
+				<input type="text" class="form-control" id="name" formControlName="name">
+				<!-- <div
+					*ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)">
+					<div *ngIf="contactForm.controls.name.errors.required" class="text-danger">Campo
+						obrigatório</div>
+				</div> -->
+			</div> 
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" formControlName="email">
+				<!-- <div
+					*ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)">
+					<div *ngIf="contactForm.controls?.email.errors.required" class="text-danger">Campo
+						obrigatório</div>
+					<div *ngIf="contactForm.controls.email.errors.email" class="text-danger">Email
+						inválido</div>
+				</div>-->
+			</div> 
+			<div class="form-group">
+				<label for="message">Mensagem:</label>
+				<textarea class="form-control" id="message" formControlName="message" maxlength="500"></textarea>
+				<!-- <div
+					*ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)">
+					<div *ngIf="contactForm.controls.message.errors.required"
+						class="text-danger">Campo obrigatório</div>
+				</div> -->
+			</div> 
+			<div class="btns">
+				<button class="cancel-btn" mat-flat-button (click)="onCancel()">Cancelar</button>
 				<button class="btn btn-primary" (click)="submitForm()"
 					[disabled]="contactForm.invalid">Enviar</button>
-			</form>
-		</div>
-	</mat-card>
-</div>
+			</div>
+		</form>
+	</div>
+</mat-card>

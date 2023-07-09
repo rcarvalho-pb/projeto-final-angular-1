@@ -8,4 +8,5 @@ import { AppData } from 'src/app/models/app-data.model';
 })
 export class ColumnComponent {
   @Input() data!: AppData;
+
 }

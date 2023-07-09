@@ -11,25 +11,27 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 })
 export class FormularioContatoComponent implements OnInit{
   showForm = false;
-  contactForm: FormGroup;
+  contactForm!: FormGroup;
   contact!: Contact;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.maxLength(500)]]
-    });
-  }
+  constructor(
+    public dialogRef: MatDialogRef<FormularioContatoComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Contact
+  ) {}
+
   ngOnInit(): void {
     this.buildForm();
   }
 
+  public onCancel(): void {
+    this.dialogRef.close();
+  }
+
   buildForm(): void {
     this.contactForm = new FormGroup({
-      name: new FormControl([null, Validators.required]),
-      email: new FormControl([null, [Validators.required, Validators.email]]),
-      message: new FormControl([null, [Validators.required, Validators.maxLength(500)]])
+      name: new FormControl(null, [Validators.required]),
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      message: new FormControl(null, [Validators.required, Validators.maxLength(500)])
     });
   }
 
