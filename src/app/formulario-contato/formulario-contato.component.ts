@@ -1,8 +1,8 @@
 import { Component, Inject,inject, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { Contact } from '../models/contact.model';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import {MatSnackBar, MatSnackBarRef, MatSnackBarModule, MatSnackBarConfig} from '@angular/material/snack-bar';
+import {MatSnackBar, MatSnackBarRef, MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 export class FormularioContatoComponent implements OnInit{
   durationInSeconds = 5;
-  showForm = false;
   showSuccessMessage = false;
   contactForm!: FormGroup;
   contact!: Contact;
@@ -23,6 +22,7 @@ export class FormularioContatoComponent implements OnInit{
     @Inject(MAT_DIALOG_DATA) public data: Contact,
     private _snackBar: MatSnackBar
   ) {}
+
   openSnackBar() {
     this._snackBar.openFromComponent(FormContactAnnotatedComponent, {
       duration: this.durationInSeconds * 800,
@@ -43,20 +43,6 @@ export class FormularioContatoComponent implements OnInit{
       email: new FormControl(null, [Validators.required, Validators.email]),
       message: new FormControl(null, [Validators.required, Validators.maxLength(500)])
     });
-  }
-
-  showContactForm() {
-    this.showForm = true;
-  }
-
-  closeForm() {
-    this.showForm = false;
-    let blankContact: Contact = {
-      name: '',
-      email: '',
-      message: ''
-    }
-    this.contactForm.patchValue(blankContact);
   }
 
   stopPropagation(event: Event) {
