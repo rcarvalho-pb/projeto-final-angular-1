@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { NgxMaskModule } from 'ngx-mask'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { NgxMaskModule } from 'ngx-mask'
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
